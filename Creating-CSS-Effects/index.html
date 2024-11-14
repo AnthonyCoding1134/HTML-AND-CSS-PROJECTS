@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Creating Effects With CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Sofia&display=swap" rel="stylesheet">
+   
+  
+        
+</head>
+<body>
+    
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="drop">
+                <a href="#">Images</a>
+                <div class="rollover-menu"> <!--Makes the image1, 2, and 3 links disappear-->
+                    <a href="#image1">Image 1</a>
+                    <a href="#image2">Image 2</a>
+                    <a href="#image3">Image 3</a>
+                   
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+  
+    <div>
+        <p class="ga-maamli-regular">More Words here</p>
+        
+    </div>
+
+   
+
+    <!--Images-->
+    <section>
+        <!--Image 1-->
+        <div class="image-container" id="image1">
+            <img src="Images/China.jpg">
+            <div class="overlay"></div>
+        </div>
+
+        <!--Image 2-->
+        <div class="image-container" id="image2">
+            <img src="Images/Japan.jpg" class="zoom">
+        </div>
+
+        <!--Image 3-->
+        <div class="image-container" id="image3">
+            <div class="circle">
+                <img src="Images/Vietnam.jpg">
+            </div>
+        </div>
+
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-text">
+        <div>
+            <p>The Tech Academy &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
