@@ -364,8 +364,8 @@ form{
     margin-right: auto; /*The browser will automatically calculate margins to center the from onthe screen*/
 
 }
-/*Specfically targets the input tags that are nested within the from tags*/
-form-input{
+/*Specfically targets the input tags that are nested within the form tags*/
+form input{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     color: rgb(165, 165, 165);
@@ -376,9 +376,57 @@ form-input{
     transition: 0.3s ease-out; /*Transisitions back to light gray when a user clicks away from an input field*/
 
 }
-from input:focus{
+form input:focus{
     border: 2px solid rgb(1, 128, 106);
     color: black;
     outline: none; /*Removes default border added when the focus psudo class is triggered*/
     transition: 0.3 ease-out;
+}
+
+label{
+    font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+
+
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both; /*Will allow user to resize the text area both in width and height*/
+    border: 3px solid rgb(165, 165, 165);
+    border-radius:  5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(165, 165, 165);
+    font-size: 15px;
+    transition: 0.3s ease-out; /*will trnasition back to light grey*/
+
+}
+textarea:focus{
+    color: black;
+    border: 3px solid rgb(1, 128, 106);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+input[type="submit"]{
+    background-color: rgb(1, 128, 106);
+    border: none;
+    border-radius: 35px;
+    font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right; /*Positions the submit button to the bottom right of the form*/
+
+}
+input[type="submit"]:hover{
+    background-color: rgb(247, 177, 188);
 }
