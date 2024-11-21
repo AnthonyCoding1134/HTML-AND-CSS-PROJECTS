@@ -349,3 +349,36 @@ input[type="button"]:hover{
     background-color: rgb(247, 177, 188);
     color: white;
 }
+
+/*CONTACT FORM CSS */
+/* Sets up the content within the div tag containing the ID contact to be centered on the web page */
+#contact{
+    display: block;
+    margin-bottom: 70px;
+}
+
+form{
+    display: table; /*This will display the form in a table format as rows and columns*/
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto; /*The browser will automatically calculate margins to center the from onthe screen*/
+
+}
+/*Specfically targets the input tags that are nested within the from tags*/
+form-input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(165, 165, 165);
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3s ease-out; /*Transisitions back to light gray when a user clicks away from an input field*/
+
+}
+from input:focus{
+    border: 2px solid rgb(1, 128, 106);
+    color: black;
+    outline: none; /*Removes default border added when the focus psudo class is triggered*/
+    transition: 0.3 ease-out;
+}
