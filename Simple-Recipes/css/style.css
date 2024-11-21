@@ -1,0 +1,351 @@
+/*import link for the Josephine font in Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+/*import link for the Sacramento font in Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Sacramento&display=swap');
+
+html{
+    overflow-x: hidden; /*Prevents browser from display left to right scrollbar asa result of nrgative margin values*/
+    scroll-behavior: smooth; /*Creates smooth scrolling effect when bookmark link is clicked*/
+}
+
+/*NAVBAR*/
+.nav-bar{
+    position: sticky; /*Creates a sticky element that stays in the same spot in the browser screen*/
+    top: 0; /*Tells the browser to stick the element at the top of the page based on user scrolling*/
+    z-index: 9; /*Sets the stack layer of the navbar to scroll over all elements*/
+}
+
+ul{
+    display: flex; /*Creates a flex container which will expand or shrink elements to fill the space available to them & place the elements side by side horzintally*/
+    list-style-type: none; /*Removes the default styling for ul elements*/
+    align-items: center;
+    margin: -8px -8px 0px -8px; /*Top Right Bottom Left- negative margins will stretch background beyond edge of screen*/
+    background-color: rgb(1, 128, 106);
+    border-bottom: 5px solid rgb(247, 177, 188);
+}
+
+a{
+        display: block; /*displays anchor elements vertically on a new line, this was added so drop-down menu displays vertically & not horizontally*/
+        font-family: "Josefin Slab", serif;
+        font-size: 25px;
+        font-weight: 800;
+        color: rgb(247, 177, 188);
+        text-align: center; 
+        width: 100px;
+        padding: 20px;
+        text-decoration: none; /*Removes underline*/
+        transition: background-color 0.3s ease-in;
+
+}
+a:hover, .drop:hover a:only-of-type /*Only-of-type effects the only child element(a href="#recipes") nested within a parent element (li).
+Ignores the a elements within the rollover menu tag because they have more then 1 sibling 
+This keeps the background color blue while hovering & text white when we move mouse over anchor elements in the rollover menu div*/
+{
+    background-color: rgb(149, 238, 223);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease-in;
+}
+
+/*Sets it so dropdown is displayed when user hovers over links in navbar*/
+.rollover-menu{
+    display: none; /*prevents anchor links in the div from showing on web-browser until otherwise specified*/
+    position: absolute; /* Absolute will position the div element relative to position of it's parent element*/
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+/*Creates trigger effect when user hovers their mouse over the recipes link. The trigger
+will display all elements within the rollover-menu class div element*/
+.drop:hover .rollover-menu{
+    display: block;
+}
+
+/* only anchor elements within elements that are in the rollover-menu class*/
+.rollover-menu a{
+    color: rgb(0, 80, 67)
+
+}
+
+/*only applies when hovering over anchor elements within elements in the rollover-menu class*/
+.rollover-menu a:hover{
+    color: white;
+    box-shadow: 0px 8px 16px 0px 0px(90, 90, 90, 0.2);
+}
+
+/*Targets the 1st anchor element (Recipes) within div tag in the rollover-menu class*/
+.rollover-menu a:nth-child(1){
+    border-top: 5px solid rgb(238, 118, 136);
+
+}
+/*FOOTER*/
+.footer{
+    align-items: center; /*Allign nested html elements in the center i.e the table data & paragraph elements in the footer tag*/
+    margin: 0px -8px -8px -8px; /*Streches footer background beyond browsers edge leaving no white space*/
+    background-color: rgb(1, 128, 106);
+    border-top: 5px solid rgb(247, 177, 188);
+    bottom: 0; /*Positions footer at bottom of screen*/
+}
+
+table{
+    width: 100%; /*Will take up full width of browser screen*/
+}
+
+td{
+    width: 33%; /*Three table data items- each takes up 1/3rd of space avail on screen*/
+}
+
+td p{
+    font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(247, 177, 188);
+}
+
+/*BODY*/
+
+.container{
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+/*HEADERS*/
+h1{
+    font-family: "Sacramento", cursive; /*From fonts.google.com*/
+    font-size: 80px;
+    color: rgb(0, 80, 67);
+    text-align: center;
+
+}
+
+h2,h3,h4{
+    font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+    text-align: center;
+
+}
+
+h2{
+    color: rgb(0, 80, 67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 177, 188);
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/*PARAGRAPHS*/
+p{
+    font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 80, 67);
+    text-align: center;
+
+}
+
+/*IMAGES*/
+
+/*Positions elements to sit side by side on the screen*/
+.column{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+/*styling for screens 1200px or smaller*/
+/*below line states if it's a digital screen AND it is 1200px or less the styling should be applied*/
+@media screen and (max-width: 1200px) {
+    .column{
+        width: 100%;
+        padding: 0px;
+        margin-left: -15px; /*centers each coulms on screen*/
+    }
+}
+
+
+/* Styles the first 7 img tag elements contained in elements with the .column ckass*/
+/* 7 photos total */
+/* if we removed the neg. sign it would start at the 7th photo*/
+.column img:nth-child(-n + 7){
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2)
+}
+
+/*this gives each recipe some space & centers them*/
+.recipe-container{
+    width: 500px;
+    height: 350px;
+    margin: 100px auto 180px;  /*top, left-right, bottom*/ 
+   perspective: 1000px; /*  tells browser how much 3d space an element should take up on screen. Solved issue of text*/
+}
+
+/*For mobile device screens & when resizing window*/
+@media screen and (max-width: 600px){
+    .column img:nth-child(-n + 7){
+        width: 350px;
+        height: 225px;
+    }
+    /*centers the images*/
+    .recipe-container{
+        width: 350px;
+        height: 225px;
+    }
+}
+
+.recipes-card-background{
+    background-color: rgb(149, 238, 223);
+}
+
+/*Alternates blue tile background on smaller screen sizes*/
+@media screen and (max-width: 1200px){
+
+    #pork{
+    background-color: rgb(255, 255, 255);
+    }
+
+    #biscuits {
+    background-color: rgb(149, 238, 233);
+    }
+}
+
+/*FEATURED RECIPE*/
+/*Styles featured recipe h3 tag*/
+#featured-header{
+    font-family: 'Sacramento', cursive; /*google font*/
+    font-size: 60px;
+    color: rgb(0, 80, 67)
+}
+
+#featured-main-text{
+    text-align: justify;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+/*Sets margin-left to 0 because it's not neded on a small screen & centers the text*/
+@media screen and (max-width: 1200px){
+    #featured-main-text{
+        margin-left: 0;
+    }
+}
+/*Styles any img element within the "featured" id only when screen width is 1600px or larger*/
+@media screen and(min-width: 1600px){
+    #featured img{
+       width: 700px;
+       height: auto; 
+       margin-left: 100px;
+       margin-top: -20px; /*Margin left & top will override margin styling from the .recipe-container class selector*/
+    }
+}
+
+/*Adjusts position of featured img to be centered in its div when the width is 1599px or less*/
+@media screen and (max-width: 1599px){
+    #featured img{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #featured .recipes-card-background{
+        height: 300px; 
+    }
+    #featured img{
+        margin-top: -65px;
+    }
+}
+
+#featured-button{
+    display: block; /*positions recipe button on its own line from the other elements in the div*/
+    margin: 60px auto 0px; /*top, left-right, bottom*/
+    background-color: rgb(1, 128, 106);
+    border-radius: 35px;
+    border: none; /*Removes default border set by browser when border-radius is used*/
+    font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 25px; /*Top-Bottom, Left-Right */
+    color: white;
+    cursor: pointer;
+
+}
+
+/*Specifically styles hover effect of recipe button in Featured Recipes section*/
+#featured-button:hover{
+    background-color: rgb(247,177, 188);
+    
+}
+
+/*Image Flip*/
+/*Positions flip effect, defines transition time, & defines a 3d effect*/
+.flip{
+    position: relative;
+    width: 100%;
+    height: 100%; /*Setting width/height to 100% allows the effect to take up 100% of space avaiable*/
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    transform-style: preserve-3d; /*Treats elements as 3d objects instead of flat 2d objects. we needed this bc we could no longer see the recipe instructions*/
+
+
+}
+.flip:hover{
+    transform: rotateY(-180deg); /*property is used to give element 2d or 3d transformation....roates on Y axis*/
+     
+}
+
+/*Used to allow reader to see the text when the recipe is flipped*/
+.flip-front, .flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /*allows us to see text underneath picture (but it is backwards)*/
+
+}
+
+.flip-back{
+    background-color: rgb(149, 238, 223);
+    border: 2px solid white;
+    transform: rotateY(180deg); /*Adds 180 degrees back from the previously subracted -180 degrees it moved to previously so the text can be read properly*/
+}
+
+/*Centered recipe text & button within the fliped-over card*/
+.text-container{
+    padding-top: 70px;
+}
+
+/*Fixed the issue of Recipe text appearing outside of the green shading in the card*/
+@media screen and (max-width: 600px){
+    .text-container{
+        padding-top: 0px;
+    }
+}
+
+/*Recipe Buttons*/
+input[type="button"]{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+    font-weight: bold;
+    font-size: 22px;
+    padding: 11px 17px;
+    color: rgb(1, 128, 106);
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(247, 177, 188);
+    color: white;
+}
