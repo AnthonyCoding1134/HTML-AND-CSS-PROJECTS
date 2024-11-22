@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
 /*import link for the Sacramento font in Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Sacramento&family=Sevillana&display=swap');
 
 html{
     overflow-x: hidden; /*Prevents browser from display left to right scrollbar asa result of nrgative margin values*/
@@ -429,4 +430,15 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
     background-color: rgb(247, 177, 188);
+}
+
+#about{
+    padding-top: 70px;
+    
+    
+}
+
+#about:hover{
+    background-color: rgb(247, 177, 188);
+    color: white;
 }
