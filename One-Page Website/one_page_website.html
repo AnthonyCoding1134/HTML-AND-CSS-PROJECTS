@@ -4,7 +4,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Coding Bootcamp Education and Contact Form">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Programming Languages Assignment</title>
+        <link rel="stylesheet" href="CSS/one_page_website.css">
     </head>
 
     <body>
@@ -20,11 +22,12 @@
 
         <nav>
             <ul>
-                <a href="#html"><li>HTML</li></a>
-                <a href="#javascript"><li>JavaScript</li></a>
-                <a href="#python"><li>Python</li></a>
-                <a href="#c"><li>C#</li></a>
-                <a href="#sql"><li>SQL</li></a>
+                <!-- <a href="#html"><li>HTML</li aria-label="Go to HTML Section"></a> -->
+                <a href="#html" aria-label="Go to HTML section"><li>HTML</li></a>
+                <a href="#javascript" aria-label="Go to JavaScript section"><li>JavaScript</li></a>
+                <a href="#python" aria-label="Go to Python section"><li>Python</li></a>
+                <a href="#c" aria-label="Go to C Sharp section"><li>C#</li></a>
+                <a href="#sql" aria-label="Go to SQL section"><li>SQL</li></a>
             </ul>
         </nav>
 
@@ -118,6 +121,7 @@
             <div>
               <h3><strong>Contact Us for Programming Training!</strong></h3>
                 <form>
+                    
                     <input type="text" id="firstName" value="First Name">
                     <input type="text" id="lastName" value="Last Name"><br>
                     <input type="email" id="emailAddress" value="Email">
