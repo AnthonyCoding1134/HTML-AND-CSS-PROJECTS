@@ -1,0 +1,7 @@
+/*Naming css file custom.css is customary when overriding css bootstrap template */
+body{
+    background-image: url(../Images/theater-curtains.jpg);
+    /*Makes width of background image equal to the browser window*/
+    background-size: 100%;
+}
+
