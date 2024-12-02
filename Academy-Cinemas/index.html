@@ -48,6 +48,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#author">Author</a>
+          </li>
 
         </ul>
       </div>
@@ -61,7 +64,7 @@
   </header>
   <!--NOW PLAYING-->
   <section>
-    <div class="container">
+    <div class="container" id="now-playing">
       <h1>Now Playing</h1>
       <!--Ben Hur-->
       <div class="d-flex flex-row flex-wrap spacer" id="ben-hur">
@@ -202,7 +205,7 @@
       <div class="d-flex flex-row flex-wrap">
         <!--MOVIE SELECTION-->
         <div class="col">
-          <div class="card">
+          <div class="card text-center">
             <h5 class="card-title">Please select a movie</h5>
             <div class="card-body">
               <select class="form-select" aria-label="Movie Title Selection">
@@ -214,9 +217,9 @@
             </div>
           </div>
         </div>
-         <!--TIME SELECTION-->
-         <div class="col">
-          <div class="card">
+        <!--TIME SELECTION-->
+        <div class="col">
+          <div class="card text-center">
             <h5 class="card-title">Please select a show time</h5>
             <div class="card-body">
               <select class="form-select" aria-label="Show Time Selection">
@@ -231,17 +234,82 @@
             </div>
           </div>
         </div>
-           <!--Ticket Quantity-->
-           <div class="col">
-            <div class="card">
-              <h5 class="card-title">Please select how many tickets</h5>
-              <div class="card-body">
-                <input type="number" id="quantity" value="1" step="1">
-              </div>
+        <!--Ticket Quantity-->
+        <div class="col">
+          <div class="card text-center">
+            <h5 class="card-title">Please select how many tickets</h5>
+            <div class="card-body">
+              <input type="number" id="quantity" value="1" step="1">
             </div>
           </div>
+        </div>
+      </div>
+      <!--BUY TICKETS BUTTON-->
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <button type="submit" class="btn yellow-btn">Buy Tickets!</button>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!--CONTACT-->
+  <section>
+    <div class="container" id="contact">
+      <h1>Contact Us!</h1>
+      <div class="row gy-4">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First Name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+        <div>
+          <input type="email" class="form-control" placeholder="Email Address">
+        </div>
+        <div>
+          <textarea class="form-control" rows="3" placeholder="Type Message Here.."></textarea>
+          <button type="Submit" class="btn yellow-btn" id="contact-submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <section>
+    <div class="container-fluid">
+      <footer class="d-flex flex-wrap justify-content-center align-items-center py-3">
+        <p class="col-md-4 mb-0 footer-text">&copy; Academy Cinemas</p>
+
+        <img src="Images/logo.png" class="col-md-4 footer-img" alt="Academy Cinemas Logo">
+     
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#now-playing" class="nav-link px-2 footer-text">Now Playing</a></li>
+          <li class="nav-item"><a href="#tickets" class="nav-link px-2 footer-text">Ticket</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link px-2 footer-text">Contact</a></li>
+        </ul>
+      </footer>
+
+      <!--Additional Footer-->
+      <div class="container-fluid">
+        <div class="row" id="author">
+          <div class="col">
+            <ul class="nav col-md-4 d-flex justify-content-evenly">
+            <li class="nav-item"><a href="#author" class="nav-link px-2 footer-text">Anthony Lockery</a></li>
+            
+          </div>
+          <div class="col">
+            <li class="nav-item"><a href="#email" class="nav-link px-2 footer-text">Anthony's Email</a></li> 
+          </div>
+          <div class="col">
+            <li class="nav-item"><a href="#github" class="nav-link px-2 footer-text">https://github.com/AnthonyCoding1134</a></li> 
+
+          </div>
+        </div>
+      </div>
+    </div>
+ 
   </section>
 
 </body>

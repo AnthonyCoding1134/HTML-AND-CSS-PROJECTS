@@ -136,7 +136,7 @@ secondary-color var created above*/
 
 /*GENEREAL STYLING*/
 
-h1, h3, h4, p{
+h1, h3, h4, h5, p{
     cursor: default; /*Default Arrow*/
 }
 
@@ -157,6 +157,11 @@ h3{
 h4{
     font-family: var(--second-font-family);
     font-size: 25px;
+}
+
+h5{
+    font-size: 30px;
+    font-family: var(--main-font-family);
 }
 
 b{
@@ -192,8 +197,103 @@ img{
     color: var(--accent-text-color);
 } 
 
+/*Added styling for yellow buttons for the buy tickets & contact form sections*/
+.yellow-btn{
+    background-color: var(--main-color-accent);
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 25px;
+    color: var(--accent-color);
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/*The 2 psuedoclasses are sharing properties*/
+.yellow-btn:hover, .yellow-btn:focus{
+    background-color: var(--main-color-accent);
+    color: var(--accent-text-color);
+}
+
 .btn:hover{
     border-color: transparent;
     background-color: var(--main-color);
     color: var(--accent-text-color);
+}
+
+/*TICKET CARDS*/
+/*This tells the browser to only target elements with the "card" class AND the "tickets" ID */
+#tickets .card{
+    padding: 40px;
+    height: 250px;
+    margin-right: 20px;
+    background-color: white;
+}
+
+.form-select{
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    border: 3px solid var(--main-color);
+    transition: border-color 0.5s ease-in;
+}
+
+.form-select:focus{
+    border-color: var(--secondary-color);
+    box-shadow: none; /*Overrides bootstraps box shadow*/
+    transition: 0.5s ease-in;
+}
+
+/*TICKET QUANTITY INPUT*/
+input[type="number"]{
+    width: 70px;
+    padding: 5px;
+    border: 3px solid var(--main-color);
+    border-radius: 5px;
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    transition: border-color 0.5s ease-in;
+}
+
+input[type="number"]:focus{
+    border: 3px solid var(--secondary-color);
+    transition: 0.5s ease-in;
+    outline: 0; /*Removes default outline set by browser*/
+}
+
+/*CONTACT FORM*/
+.form-control{
+    border: 3px solid var(--main-color);
+    transition: 1s ease;
+}
+
+/*Overrides Bootstrap's focus effect*/
+.form-control:focus{
+    color: #212529;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0px .25rem var(--main-color);
+}
+
+/*Adjusts the contact form submit button to the right side of the scren*/
+#contact-submit{
+    float: right;
+}
+
+/*FOOTER*/
+footer{
+    border-top: 5px solid var(--main-color);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0px -15px 0px -15px; /*Extends footer beyond the webpage on the lefg & right sides leaving no white space*/
+
+}
+
+.footer-text{
+    font-family: var(--main-font-family);
+    color: var(--accent-text-color);
+    font-size: 30px;
+}
+
+/*Specfically styles the footer image separate from the other images on the page & overrides the img type seelctor styling*/
+.footer-img{
+    width: auto;
+    height: 130px;
 }
