@@ -1,0 +1,179 @@
+body{
+   margin: 25px;
+}
+
+img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 80%;
+    filter: grayscale(75%);
+    border-radius: 35px;
+   
+    
+   
+
+ }
+
+ footer{
+    
+    
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 0, 200);
+    font-weight: bold;
+    color: wheat;
+    margin-top: 25px;
+    padding-top: 15px;
+    
+    
+    
+   
+    
+    
+
+ }
+
+ /* .table-style{
+   border: 2px solid blue;
+ } */
+
+td, tr, th, table{
+   
+      border: 1px solid lightblue;
+      
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 25px;
+      width: 75%;
+      margin-bottom: 30px;
+      
+    }
+
+    td, th{
+      padding: 25px;
+    }
+
+    tr:nth-child(1){
+      background-color: brown;
+    }
+
+
+    .container{
+      position: relative;
+      text-align: center;
+      color: white;
+      padding-bottom: 30px;
+    }
+
+     
+   .image-text {
+      position: absolute;
+      text-align: center;
+      color: yellow;
+      top: 50%;
+      left: 50%;
+      z-index: 5;
+     
+    }
+
+    .navbar{
+      background-color: red;
+      color: springgreen;
+      position: fixed;
+      text-align: center;
+      top: 0;
+      width: 100%;
+      z-index: 8;
+      
+      
+    }
+
+    .navbar:hover{
+      color: yellow;
+    }
+    
+    .apparent{
+      
+      padding-top: 40px;
+      margin: 20px;
+      margin-top: 20px;
+    }
+
+    .column{
+      float: left;
+      width: 50%;
+      height: auto;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      background-color: coral;
+      color:blue;
+      
+    }
+
+    .row:after{
+      content: "";
+      display: table;
+      clear: both;
+      padding-top: 35px;
+      border-radius: 30px;
+    }
+
+    p:hover{
+      font-size: 60px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .overlay{
+      
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 100%;
+         width: 100%;
+         opacity: 0;
+         transition: .5s ease-in;
+         background-color: #008CBA;
+       }
+    
+       .container:hover .overlay {
+         opacity: 1;
+         transition: 2s ease-out;
+       }
+
+      iframe{
+         padding-top: 30px;
+         padding-bottom: 30px;
+      }
+
+      video{
+         display:block;
+         margin-left: auto;
+         margin-right: auto; 
+         width: 40%;
+         height:auto;
+       
+         border-radius: 35px;
+      }
+
+      p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
