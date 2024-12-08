@@ -1,0 +1,74 @@
+/*set font family for whole doc*/
+html{
+    font-family: Arial, sans-serif;
+}
+
+
+
+.content-container{
+  margin-right: 15%;
+  margin-left: 15%;
+ 
+  
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #7b7485;
+    overflow: hidden;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: larger;
+    position: fixed;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* font-size: 17px; */
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #000080;
+    color: white;
+  }
+
+  /*Styling the informational tiles on the page*/
+  .info_tile{
+    border: 0px solid black;
+    box-shadow: 4px 5px 10px gray;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  /*Apply styling to paragraphs only within info_tile class*/
+  .info_tile p{
+    text-align: justify;
+  }
+
+  img{
+    float:right;
+  }
+
+ 
+   h1{
+    padding-top: 25px;
+  }  
+
+  /*Styling the "Impact" paragraph */
+  #impact_para{
+    font-size: x-large;
+    padding: 78px;
+  }
