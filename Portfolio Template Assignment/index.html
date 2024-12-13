@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Anthony's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/stylesheet/portfolio.css">
+</head>
+
+<!--Body-->
+
+<body>
+
+    <!--Navbar-->
+    <div class="Navbar">
+        <a class="active" href="#">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <!--Breaks inserted to add space between navbar and the first heading-->
+    <br>
+    <br>
+
+    <!--Background video-->
+    <video autoplay muted loop id="Coding_Video">
+        <source src="Images/images/codingVideo2.mp4" type="video/mp4">
+        <!--Display message if video fails to run-->
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!--Video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">Anthony's Coding Portfolio</h1>
+        <strong>
+            <p class="center">
+                
+                <br>
+                <br> My name is Anthony. Welcome to my portfolio website
+                <br>
+                <br> Thanks for stopping by and enjoy!
+            </p>
+        </strong>
+    </div>
+
+    <!--About section-->
+    <div class="Row" id="About">
+        <!--Left column-->
+        <div class="Column_2">
+            <img src="/Images/images/processor-8785387_1280.jpg" alt= "Motherboard" style="height:375px; width:925px">
+        </div>
+        <!--Right column-->
+        <div class="Column_1">
+            <h1>About me</h1>
+            <p>
+                I am an aspiring Software Developer and Amateur Radio enthusiast!
+                <br>
+                <br>Currently I'm attending <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+                    Academy</a>’s C# and ASP.NET bootcamp.
+                <br>
+                <br>I would love to collaborate with you on your next project. Please reach out and <a
+                    href="#Contact">contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!--GitHub section-->
+    <div class="container" id="GitHub">
+        <img src="Images/images/GitHub.png" alt="Github Logo" style="width:65%; height:450px">
+        <div class="github-centered">
+            <h2>Check out my Github Profile.  All ideas welcomed!</h2>
+        </div>
+        <div class="bottom-centered">
+            <h2><a href="https://github.com/AnthonyCoding1134/HTML-AND-CSS-PROJECTS">Anthony's Github Repo</a></h2>
+        </div>
+       
+        
+    </div>
+
+    <!--Contact section-->
+    <div class="Row" id="Contact">
+        <!--Contact image, left column-->
+        <div class="Column_2 Column_tall">
+            <img src="Images/images/Message2.jpg" alt="Message image" style="width:885px; height:400px;">
+        </div>
+        <!--Contact form, right column-->
+        <div class="Column_1 Column_tall">
+            <h1>Reach out to me!</h1>
+            <!--This specifies where and how to send the form data-->
+            <form action="https://formspree.io/f/mbljbvwq" method="POST">
+                <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                <label>Name:</label>
+                <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label>Message:</label>
+                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <p>
+        <p>&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/"
+                target="_blank">The Tech Academy</a></p>
+        <br>
+        </p>
+    </footer>
+</body>
+
+</html>
