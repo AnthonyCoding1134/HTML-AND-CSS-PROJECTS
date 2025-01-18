@@ -1,164 +1,283 @@
 <!DOCTYPE html>
 
- <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Coding Bootcamp Education and Contact Form">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Programming Languages Assignment</title>
-        <link rel="stylesheet" href="CSS/one_page_website.css">
-    </head>
+<html lang="en">
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Coding Bootcamp Education and Contact Form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages Assignment</title>
+    <link rel="stylesheet" href="CSS/one_page_website.css">
+    <script src="JS/one_page_website.js" defer></script>
+   
+</head>
 
-        <header>
-            <div>
-                <h1>Most Popular Programming Languages</h1>
-                <blockquote cite="Santosh Kalwar">
-                    Coding like poetry should be short and concise. 
-                </blockquote>
+<body>
+
+    <header>
+        <div>
+            <h1>Most Popular Programming Languages</h1>
+            <blockquote cite="Santosh Kalwar">
+                Coding like poetry should be short and concise.
+            </blockquote>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <!-- <a href="#html"><li>HTML</li aria-label="Go to HTML Section"></a> -->
+            <a href="#html" aria-label="Go to HTML section">
+                <li>HTML</li>
+            </a>
+            <a href="#javascript" aria-label="Go to JavaScript section">
+                <li>JavaScript</li>
+            </a>
+            <a href="#python" aria-label="Go to Python section">
+                <li>Python</li>
+            </a>
+            <a href="#c" aria-label="Go to C Sharp section">
+                <li>C#</li>
+            </a>
+            <a href="#sql" aria-label="Go to SQL section">
+                <li>SQL</li>
+            </a>
+        </ul>
+    </nav>
+
+    <section>
+        <div>
+            <h2>Front End Languages</h2>
+        </div>
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <div id="html">
+                    <img src="Images\html.png" alt="HTML logo" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
+                    <h3>HTML</h3>
+                    <p>
+                        HTML is the standard markup language for Web pages. With HTML you can create your own Website.
+                        It
+                        consists of a series of elements. HTML elements tell the browser how to display the content.
+                        HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this
+                        is a
+                        link", etc.
+                    </p>
+
+                </div>
             </div>
-        </header>
-
-        <nav>
-            <ul>
-                <!-- <a href="#html"><li>HTML</li aria-label="Go to HTML Section"></a> -->
-                <a href="#html" aria-label="Go to HTML section"><li>HTML</li></a>
-                <a href="#javascript" aria-label="Go to JavaScript section"><li>JavaScript</li></a>
-                <a href="#python" aria-label="Go to Python section"><li>Python</li></a>
-                <a href="#c" aria-label="Go to C Sharp section"><li>C#</li></a>
-                <a href="#sql" aria-label="Go to SQL section"><li>SQL</li></a>
-            </ul>
-        </nav>
-
-        <section>
-            <div>
-                <h2>Front End Languages</h2>
+            <div class="column">
+                <div id="javascript">
+                    <img src="Images/JavaScript-logo.png" alt="JavaScript logo" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow">
+                    <h3>JavaScript</h3>
+                    <p>
+                        JavaScript (often abbreviated as JS) is a versatile programming language primarily used for
+                        adding
+                        interactivity and dynamic behavior to web pages.
+                        It's a core technology of the web, alongside HTML and CSS. JavaScript can dynamically modify
+                        HTML
+                        elements, their attributes, and their styles.
+                        This allows you to create interactive elements, update content without page reloads, and respond
+                        to
+                        user
+                        actions
+                    </p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div id="html">
-               <img src="Images\html.png" alt="HTML logo">
-               <h3>HTML</h3>
-               <p>
-                    HTML is the standard markup language for Web pages. With HTML you can create your own Website. It consists of a series of elements.  HTML elements tell the browser how to display the content. 
-                    HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
-                </p>
-               
+    <section>
+
+        <div>
+            <h2>Backend Languages</h2>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div id="python">
+                    <img src="Images/Python-logo.png" alt="python logo" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow">
+                    <h3>Python</h3>
+                    <p>
+                        Python is a high-level, general-purpose programming language. Its design philosophy emphasizes
+                        code
+                        readability with the use of significant indentation.
+                        Python is dynamically typed and garbage-collected. It supports multiple programming paradigms,
+                        including
+                        structured (particularly procedural),
+                        object-oriented and functional programming.
+                        It is often described as a "batteries included" language due to its comprehensive standard
+                        library.
+                    </p>
+                </div>
             </div>
+            <div class="column">
+                <div id="c">
+                    <img src="Images/C_Sharp_Logo_2023.svg.png" alt="C# Logo" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow">
+                    <h2>C#</h2>
+                    <p>
+                        C# is pronounced "C-Sharp". It is an object-oriented programming language created by Microsoft
+                        that
+                        runs
+                        on the .NET Framework.
+                        C# has roots from the C family, and the language is close to other popular languages like C++
+                        and
+                        Java.
+                        The first version was released in year 2002. The latest version, C# 12, was released in November
+                        2023.
+                    </p>
 
-            <div id="javascript">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript logo" style="width:200px;height:200px;">
-                <h3>JavaScript</h3>
-                <p>
-                    JavaScript (often abbreviated as JS) is a versatile programming language primarily used for adding interactivity and dynamic behavior to web pages. 
-                    It's a core technology of the web, alongside HTML and CSS. JavaScript can dynamically modify HTML elements, their attributes, and their styles. 
-                    This allows you to create interactive elements, update content without page reloads, and respond to user actions
-                </p>
+
+                </div>
             </div>
-
-        </section>
-
-        <section>
-            <div>
-                <h2>Backend Languages</h2>
-            </div>
-
-            <div id="python">
-                <img src="Images/Python-logo.png" alt="python logo" style="width:200px;height:200px;">
-                <h3>Python</h3>
-                <p>
-                    Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
-                    Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), 
-                    object-oriented and functional programming. 
-                    It is often described as a "batteries included" language due to its comprehensive standard library.
-                </p>
-            </div>
-
-            <div id="c"> 
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/640px-C_Sharp_Logo_2023.svg.png" alt="C# Logo" style="width:200px;height:200px;">
-                <h2>C#</h2>
-                <p>
-                   C# is pronounced "C-Sharp".  It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.
-                   C# has roots from the C family, and the language is close to other popular languages like C++ and Java.
-                   The first version was released in year 2002. The latest version, C# 12, was released in November 2023.
-                </p>
-
-                    
-            </div>
-
             <div id="sql">
-                <img src="Images/SQL.png" alt="A SQL Logo" style="width:200px;height:200px;">
+                <img src="Images/SQL.png" alt="A SQL Logo" onclick="openModal();currentSlide(5)" class="hover-shadow">
                 <h2>SQL</h2>
                 <p>
-                    Structured query language (SQL) is a programming language for storing and processing information in a relational database. 
-                    A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values.
+                    Structured query language (SQL) is a programming language for storing and processing information in
+                    a
+                    relational database.
+                    A relational database stores information in tabular form, with rows and columns representing
+                    different
+                    data attributes and the various relationships between the data values.
                 </p>
             </div>
+        </div>
+    </section>
 
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
 
-
-
-        </section>
-
-        <section>
-
-            <div>
-                <h2>The Future of Software</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OdI7Ukf-Bf4?si=zs1uHc_eKqz9CmWq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="Images/html - Wide.png">
             </div>
 
-            <article>
-                <h2>Will AI help or hurt Programmers</h2>
-                <p>
-                    The future of programming will likely involve a collaboration between human developers and AI-powered tools. 
-                    Programmers will need to adapt their skills to effectively leverage these tools while still maintaining a deep understanding of programming concepts and best practices.
-                </p>
-            </article>
-
-        </section>
-
-        <section>
-            <div>
-              <h3><strong>Contact Us for Programming Training!</strong></h3>
-                <form>
-                    
-                    <input type="text" id="firstName" value="First Name">
-                    <input type="text" id="lastName" value="Last Name"><br>
-                    <input type="email" id="emailAddress" value="Email">
-                    <input type="tel" id="phone" value="Phone Number">
-                    <p>Please tell us which language you're interested in!</p>
-                    <input type="radio" id="html" value="HTML">
-                    <label for="html">HTML</label><br>
-                    <input type="radio" id="javascript" value="JavaScript">
-                    <label for="javascript">JavaScript</label><br>
-                    <input type="radio" id="python" value="Python">
-                    <label for="python">Python</label><br>
-                    <input type="radio" id="c#">
-                    <label for="c#">C#</label><br>
-                    <input type="radio" id="sql" value="SQL">
-                    <label for="sql">SQL</label><br>
-                    <input type="submit" value="Your future begins!">
-                </form>       
-
-
-            
-               
+            <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="Images/JavaScript-logo - Wide.png">
             </div>
-        </section>
 
-        <footer>
-            <p>&copy; 2024 CODEWARRIORS </p>
-        </footer>
+            <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="Images/Python-logo - Wide.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="Images/C_Sharp_Logo_2023.svg -Wide.png">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="Images/SQL - Copy.png">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!--Thumbnail Image Controls-->
+            <div class="column">
+                <img class="demo" src="Images/html.png" onclick="currentSlide(1)" alt="HTML logo">
+                <h1>HTML is fun</h1>
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/JavaScript-logo.png" onclick="currentSlide(2)" alt="JS logo">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/Python-logo.png" onclick="currentSlide(3)" alt="Python logo">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/C_Sharp_Logo_2023.svg.png" onclick="currentSlide(4)" alt="C# logo">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/SQL.png" onclick="currentSlide(5)" alt="SQL logo">
+            </div>
+
+        </div>
+    </div>
+
+    </section>
+
+    <section>
+
+        <div>
+            <h2>The Future of Software</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OdI7Ukf-Bf4?si=zs1uHc_eKqz9CmWq"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <article>
+            <h2>Will AI help or hurt Programmers</h2>
+            <p>
+                The future of programming will likely involve a collaboration between human developers and AI-powered
+                tools.
+                Programmers will need to adapt their skills to effectively leverage these tools while still maintaining
+                a deep understanding of programming concepts and best practices.
+            </p>
+        </article>
+
+    </section>
+
+    <section>
+        <div>
+            <h3><strong>Contact Us for Programming Training!</strong></h3>
+            <form>
+
+                <input type="text" id="firstName" value="First Name">
+                <input type="text" id="lastName" value="Last Name"><br>
+                <input type="email" id="emailAddress" value="Email">
+                <input type="tel" id="phone" value="Phone Number">
+                <p>Please tell us which language you're interested in!</p>
+                <input type="radio" id="html" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="javascript" value="JavaScript">
+                <label for="javascript">JavaScript</label><br>
+                <input type="radio" id="python" value="Python">
+                <label for="python">Python</label><br>
+                <input type="radio" id="c#">
+                <label for="c#">C#</label><br>
+                <input type="radio" id="sql" value="SQL">
+                <label for="sql">SQL</label><br>
+                <input type="submit" value="Your future begins!">
+            </form>
+
+
+
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CODEWARRIORS </p>
+    </footer>
 
 
 
 
 
 
-
-    </body>
-
-
+  
+</body>
 
 
- </html>
+
+
+</html>
