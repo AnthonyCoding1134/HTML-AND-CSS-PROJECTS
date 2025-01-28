@@ -38,6 +38,17 @@ secondary-color var created above*/
     height: 100px;
 }
 
+/*Shrink on scroll navbar */
+.nav-shrink {
+    height: 80px;
+    transition: .5s ease;
+}
+
+/*Adds a transition to the movie drop down menu on shrink & scroll*/
+.navbar-collapse{
+    transition: margin-top 0.5s ease;
+}
+
 .card{
     border: 5px solid var(--main-color);
     border-radius: 5px;
