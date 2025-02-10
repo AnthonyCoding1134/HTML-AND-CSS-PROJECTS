@@ -2,9 +2,10 @@
 <html>
 
 <!--Head-->
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Anthony's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="stylesheet/stylesheet/portfolio.css">
 </head>
@@ -37,20 +38,63 @@
         <h1 class="white-text">Anthony's Coding Portfolio</h1>
         <strong>
             <p class="center">
-                
+
                 <br>
-                <br> My name is Anthony. Welcome to my portfolio website
+                <br> Hi, I'm Anthony. Welcome to my portfolio website
                 <br>
                 <br> Thanks for stopping by and enjoy!
             </p>
         </strong>
     </div>
 
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!--Slide 1 of 6 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Images/images/Language Logos/HTML.png" alt="HTML Logo">
+                    <div class="text">I've learned how to define the content of web pages</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Images/images/Language Logos/CSS Pic.png" alt="CSS Logo">
+                    <div class="text">I'm also proficient at styling pages</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Images/images/Language Logos/JavaScript-Logo.png"
+                        alt="JavaScript Logo">
+                    <div class="text">Learning how to make sites interactive</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="Images/images/Language Logos/C_Sharp_Logo_2023.svg.png"
+                        alt="C# Pic">
+                    <div class="text">Looking forward to learning C#</div>
+                </div>
+
+                <!--Previous & Next Buttons-->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!--Slideshow dots-->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+        </div>
+    </div>
+
     <!--About section-->
     <div class="Row" id="About">
         <!--Left column-->
         <div class="Column_2">
-            <img src="/Images/images/processor-8785387_1280.jpg" alt= "Motherboard" style="height:375px; width:925px">
+            <img src="/Images/images/processor-8785387_1280.jpg" class="zoomRotate" alt="Motherboard" style="height:375px; width:925px">
         </div>
         <!--Right column-->
         <div class="Column_1">
@@ -71,46 +115,52 @@
     <div class="container" id="GitHub">
         <img src="Images/images/GitHub.png" alt="Github Logo" style="width:65%; height:450px">
         <div class="github-centered">
-            <h2>Check out my Github Profile.  All ideas welcomed!</h2>
+            <h2>Check out my Github Profile. All ideas welcomed!</h2>
         </div>
         <div class="bottom-centered">
             <h2><a href="https://github.com/AnthonyCoding1134/HTML-AND-CSS-PROJECTS">Anthony's Github Repo</a></h2>
         </div>
-       
-        
+
+
     </div>
 
-    <!--Contact section-->
-    <div class="Row" id="Contact">
+    <!--Contact form-->
+    <div class="Row">
         <!--Contact image, left column-->
         <div class="Column_2 Column_tall">
             <img src="Images/images/Message2.jpg" alt="Message image" style="width:885px; height:400px;">
         </div>
         <!--Contact form, right column-->
-        <div class="Column_1 Column_tall">
-            <h1>Reach out to me!</h1>
-            <!--This specifies where and how to send the form data-->
-            <form action="https://formspree.io/f/mbljbvwq" method="POST">
-                <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                <label>Name:</label>
-                <input type="text" placeholder="Please enter your name here">
-                <label>Email:</label>
-                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                <label>Message:</label>
-                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                <input type="submit" value="SUBMIT">
-            </form>
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <!--This specifies where and how to send the form data-->
+                <form action="https://formspree.io/f/mbljbvwq" method="POST" class="form-container">
+                    <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <h1>Reach out to me!</h1>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                    <input type="submit" value="SUBMIT">
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
         </div>
     </div>
 
     <!--Footer section-->
     <footer>
         <p>
-        <p>&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/"
-                target="_blank">The Tech Academy</a></p>
+        <p>&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech
+                Academy</a></p>
         <br>
         </p>
     </footer>
+
+    <script src="portfolio.js"></script>
 </body>
 
 </html>
