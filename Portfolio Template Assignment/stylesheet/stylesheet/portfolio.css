@@ -105,7 +105,7 @@ img {
 
 /* Slideshow Styling*/
 #Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(87, 61, 61, 0.71);
 }
 
 #Slideshow_Container {
@@ -125,7 +125,7 @@ img {
     vertical-align: middle;
     height: auto;
     box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
-    width: 100%; /* The width of the images is automatically adjusted based on the content */
+    width: 50%; /* The width of the images is automatically adjusted based on the content */
 }
 
 /*Next & Previous Buttons */
@@ -219,6 +219,7 @@ img {
         filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
         transition: transform 1s;  /* Transition lasts 1 second */
         transform: scale(1.1);
+        
 }
 /* The @media rule is used in media queries to apply different styles for different media/types of devices */
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
